@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    background-color: #559e83;
+    flex: 1 0 auto;
+}
+
+
+input {
+	color: white;
+}
+
+#SignInTitle {
+	font-weight: 900;
+}
+
+#SignInButton {
+	background-color: #ae5a41;
+}
+
+#SignInForm {
+	border: 5px solid #ae5a41;
+	border-radius: 7%;
+	background-color: #5a5255;
+}
+
+#SignUpForm {
+	border: 5px solid #ae5a41;
+	border-radius: 7%;
+	background-color: #5a5255;
+	height: 380px;
+}
+
+#ForgetPasswordForm {
+	border: 5px solid #ae5a41;
+	border-radius: 7%;
+	background-color: #5a5255;
+	height: 250px;
+}
+
+#ResetPasswordTitle {
+	font-weight: lighter;
+}
+
+#SignUpTitle {
+	font-weight: lighter;
+}

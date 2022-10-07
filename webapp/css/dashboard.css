@@ -1,0 +1,69 @@
+/*Dashboard css*/
+
+.logo-container {
+    padding: 0 16px !important;
+    height: 64px;
+    line-height: 64px;
+    font-size: 24px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: content-box;
+}
+
+.sidenav .collapsible>li.waves-effect {
+    display: block;
+}
+
+.sidenav .collapsible .collapsible-header {
+    text-transform: uppercase;
+    height: 64px;
+    line-height: 64px;
+}
+
+.sidenav .collapsible>.active .collapsible-header .chevron {
+    transform: rotate(-90deg);
+}
+
+.sidenav .collapsible .collapsible-header .chevron {
+    float: right;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 20px 0 0 0;
+    transition: transform .2s;
+}
+
+main>.container {
+    margin-top: 20px;
+}
+
+.section {
+    padding: 64px 0;
+    position: relative;
+}
+
+.collapsible.setting {
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.settings-title {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.settings-group {
+    margin-bottom: 50px;
+}
+
+.collapsible.setting .collapsible-body {
+    background-color: white !important;
+}
+
+#settings-wrapper .collapsible .collapsible-header .caret {
+    transition: transform .2s;
+}
+
+#settings-wrapper .collapsible>.active .collapsible-header .caret {
+    transform: rotate(90deg);
+}

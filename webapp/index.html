@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DAM Fridge-Login</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="3rd-party/materialize/css/materialize.css" media="screen,projection" />
+    <!-- Import custom css-->
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/page_template.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <main>
+        <div id="SignInContainer" class="container">
+            <div class="row">
+                <div class="">
+                    <h2 id="SignInTitle" class="center-align white-text">Sign in to DAM Fridge</h2>
+                </div>
+                <div class="col m3 xl4"></div>
+                <div class="col s12 m6 xl4">
+                    <form id="SignInForm" class="col s12 m12" action="php/authenticate.php" method="post">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">account_box</i>
+                                <input placeholder="Enter your email address" name="email" id="email" type="email" class="validate" autocomplete="on" required="">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">lock</i>
+                                <input placeholder="Enter your password" name="password" id="password" type="password" class="validate" required="">
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                        <button id="SignInButton" class="btn waves-effect waves-light red" type="submit" name="action">Sign in
+                            <i class="material-icons right">send</i>
+                        </button>
+                        <p class="">
+                            <a id="ForgetPasswordLink" href="#ForgetPasswordContainer">Forget password?</a> or
+                            <a id="SignUpLink" href="#SignUpContainer">Sign up</a>
+                        </p>
+                    </form>
+                </div>
+                <div class="col m3 xl4"></div>
+            </div>
+        </div>
+        <div id="ForgetPasswordContainer" class="container">
+            <div class="row">
+                <h2 id="ResetPasswordTitle" class="center-align white-text">Reset your password</h2>
+                <div class="col m3 xl4"></div>
+                <div class="col s12 m6 xl4">
+                    <form id="ForgetPasswordForm" class="col s12 m12" action="php/mail.php" method="post">
+                        <p class="white-text">Enter your email address to receive a link to reset your password.</p>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">account_box</i>
+                                <input placeholder="Enter your email address" id="PasswordEmail" name="email" type="email" class="validate" required="" 
+                                >
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <button id="SendEmail" class="btn waves-effect waves-light red" type="submit" name="action">Send Me a Link
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col m3 xl4"></div>
+            </div>
+        </div>
+        <div id="SignUpContainer" class="container">
+            <div class="row">
+                <div class="">
+                    <h2 id="SignUpTitle" class="center-align white-text">Sign up for DAM Fridge</h2>
+                </div>
+                <div class="col m3 xl4"></div>
+                <div class="col s12 m6 xl4">
+                    <form id="SignUpForm" class="col s12 m12" action="php/requestAccess.php" method="post">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">account_box</i>
+                                <input placeholder="Enter your email address" name="email" id="email" type="email" class="validate" autocomplete="on" required="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">face</i>
+                                <input placeholder="Create a username" name="username" id="username" required="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">lock</i>
+                                <input placeholder="Create a password" name="password" id="password" type="password" required="">
+                            </div>
+                        </div>
+                        <button id="SignUpButton" class="btn waves-effect waves-light red" type="submit" name="action">Sign Up
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col m3 xl4"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s6 m6">
+                    <h5 class="white-text">DAM Fridge</h5>
+                    <p class="grey-text text-lighten-4">Engineering capstone 2018</p>
+                </div>
+                <div class="col s6 m3">
+                    <h5>About</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-4" href="#!">Team</a></li>
+                        <li><a class="grey-text text-lighten-4" href="#!">Docs</a></li>
+                    </ul>
+                </div>
+                <div class="col s6 m3">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-4" href="https://github.com/dinkar-sharma/DAM_Fridge_Capstone_2018">Github</a></li>
+                        <li><a class="grey-text text-lighten-4" href="#!">Linkdin</a></li>
+                        <li><a class="grey-text text-lighten-4" href="#!">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 DAM Fridge
+            </div>
+        </div>
+    </footer>
+</body>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="3rd-party/materialize/js/materialize.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
